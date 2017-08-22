@@ -2,6 +2,7 @@ function showPreview(source, imgId) {
     var file = source.files[0];
     
     if (!/\/(?:jpeg|jpg|png)/i.test(file.type)) {
+        alert('请选择jpeg、jpg、png文件');
         return;
     }
 
